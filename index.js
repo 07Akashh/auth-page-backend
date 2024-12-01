@@ -12,7 +12,7 @@ const uri = process.env.MONGO_URI
 
 app.use(
     cors({
-        origin: 'http://localhost:3000',
+        origin: ['http://localhost:3000','https://authentication-form-implement.netlify.app'],
         credentials: true,
     })
 );
